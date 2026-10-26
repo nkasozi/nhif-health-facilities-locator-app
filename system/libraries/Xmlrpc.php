@@ -1890,9 +1890,7 @@ class XML_RPC_Values extends CI_Xmlrpc
 		reset($ar);
 
 		$typ = key($ar);
-
 		$val = current($ar);
-
 		next($ar);
 		return "<value>\n".$this->serializedata($typ, $val)."</value>\n";
 	}
